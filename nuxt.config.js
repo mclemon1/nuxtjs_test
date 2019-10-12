@@ -24,6 +24,9 @@ module.exports = {
       href: '/favicon.ico'
     }]
   },
+  router: {
+    base: process.env.NODE_ENV === 'production' ? '/nuxtjs/' : '/'
+  },
   /*
    ** Customize the progress-bar color
    */
