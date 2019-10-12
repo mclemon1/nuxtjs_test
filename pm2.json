@@ -1,0 +1,6 @@
+{
+  "name": "nuxt-test",
+  "script": "./server/index.js",
+  "instances": 2,
+  "cwd": "."
+}
