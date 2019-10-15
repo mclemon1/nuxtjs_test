@@ -1,6 +1,17 @@
 {
   "name": "nuxt-test",
   "script": "./server/index.js",
-  "instances": 2,
-  "cwd": "."
+  "cwd": "./",
+  "watch": [
+    "./.nuxt"
+  ],
+  "ignore_watch": [
+    "node_modules",
+    "logs"
+  ],
+  "watch_options": {
+    "followSymlinks": false
+  },
+  "error_file": "./logs/app-err.log",
+  "out_file": "./logs/app-out.log"
 }
