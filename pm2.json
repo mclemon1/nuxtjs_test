@@ -13,5 +13,11 @@
     "followSymlinks": false
   },
   "error_file": "./logs/app-err.log",
-  "out_file": "./logs/app-out.log"
+  "out_file": "./logs/app-out.log",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "env_dev": {
+    "NODE_ENV": "development"
+  }
 }
