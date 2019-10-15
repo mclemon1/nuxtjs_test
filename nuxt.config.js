@@ -25,7 +25,7 @@ module.exports = {
     }]
   },
   router: {
-    base: process.env.NODE_ENV === 'production' ? '/nuxtjs' : '/'
+    base: process.env.NODE_ENV === 'production' ? '/nuxtjs/' : '/'
   },
   /*
    ** Customize the progress-bar color
