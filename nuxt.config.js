@@ -1,5 +1,8 @@
 module.exports = {
   mode: 'universal',
+  // env: {
+  //   baseUrl: process.env.BASE_URL || 'http://localhost:3000'
+  // },
   /*
    ** Headers of the page
    */
@@ -45,7 +48,8 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/axios'
   ],
   /*
    ** Nuxt.js dev-modules

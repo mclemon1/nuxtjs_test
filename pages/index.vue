@@ -17,6 +17,25 @@ import Logo from "~/components/Logo.vue";
 export default {
   components: {
     Logo
+  },
+  mounted() {
+    this.$axios
+      .post("https://op.huishoubao.com/index/index", {
+        _head: {
+          _version: "0.01",
+          _msgType: "request",
+          _timestamps: "1571645493",
+          _interface: "PlatProfit.getEnv",
+          _remark: ""
+        },
+        _param: {
+          user_id: "1227",
+          login_token: "146fb8f8405f99974df2443413a2c061"
+        }
+      })
+      .then(res => {
+        console.log(res);
+      });
   }
 };
 </script>
